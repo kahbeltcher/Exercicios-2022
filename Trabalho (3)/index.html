@@ -8,10 +8,12 @@
 	<title>Cadastro</title>
 </head>
 <body>
+	<!--IMAGEM-->
 	<div class="container">
 		<div class="form-image">
 			<img src="assets/img/undraw_social_friends_re_7uaa.svg" alt="">
 		</div>
+		<!--FORM-->
 		<div class="form">
 			<form action="#">
 				<div class="form-header">
@@ -19,6 +21,7 @@
 						<h2>Cadastre-se</h2>
 					</div>
 				</div>
+				<!--GROUP -->
 				<div class="input-group">
 					<!--NOME-->
 					<div class="input-box">
@@ -45,40 +48,44 @@
 						<input id="number"type="tel" name="number"
 						placeholder="(xx)xxxx-xxxx" required>
 					</div>
-					
-			
 				</div>
-					<!--AREA DE INTERESSE-->
-					<div class="input-box">
-						<label class="input-box"for="area">Áreas de interesse</label>
-						<select  id="area" multiple aria-label="multiple select example" required>
-							<option selected disabled>Selecione</option> 
-							<option value="1">Análise</option>
-							<option value="2">Banco de dados</option>
-							<option value="3">Desenvolvimento</option>
-							<option value="4">Engenharia de software</option>
-							<option value="5"> Redes de computadores</option>
-						  </select>
-					</div>
+
+				<!--AREA DE INTERESSE-->
+				<div class="input-box">
+					<label class="input-box"for="area">Áreas de interesse</label>
+					<select  id="area" multiple aria-label="multiple select example" required>
+						<option selected disabled>Selecione</option> 
+						<option value="1">Análise</option>
+						<option value="2">Banco de dados</option>
+						<option value="3">Desenvolvimento</option>
+						<option value="4">Engenharia de software</option>
+						<option value="5"> Redes de computadores</option>
+					</select>
+				</div>
+					<!--GENDER-->
 				<div class="gender-inputs">
 					<div class="gender-title">
 						<h4>Gênero</h4>
 					</div>
+					<!--FEMININO-->
 					<div class="gender-group">
 						<div class="gender-input">
 							<input type="radio" name="gender" id="female">
 							<label for="female">Feminino</label>
 						</div>
+						<!--MASCULINO-->
 						<div class="gender-input">
 							<input type="radio" name="gender" id="male">
 							<label for="male">Masculino</label>
 						</div>
+						<!--OUTROS-->
 						<div class="gender-input">
 							<input type="radio" name="gender" id="outros">
 							<label for="outros">Outros</label>
 						</div>
 					</div>
 				</div>
+				<!--BOTÃO-->
 				<div class="continue-button">
 					<button><a href="#">Continuar</a></button>
 				</div>
