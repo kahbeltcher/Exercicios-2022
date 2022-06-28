@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    font-family: "poppins",Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    place-items:center;
+    height:100vh;
+}
+ul{
+    list-style:none;
+    margin-block-start:0;
+    margin-block-end:0;
+    padding-inline-start:0;
+}
+
+.dropdown {
+    position:relative;
+}
+/*cor de fundo espaço "home" tamanho*/
+.label{
+    cursor:pointer;
+    background: #f8f6f6;
+    padding:0.8rem 1rem;
+    width:10%;
+    display:block;
+    box-sizing:border-box;
+    transition:all 0.10s;
+}
+/*transição dentro de item, cor e espaçamento etc */
+.items a {
+    color: rgb(10, 6, 6);
+    display:flex;
+    align-items:center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+/*ao passar o mouse por cima do link o fundo muda de cor*/
+.items a:hover{
+    border-left:5px solid;
+    background: #ffffff;
+}
+/*transformação do item e cor de fundo alem de tamanho  e visibilidade etc*/
+.items  {
+    background: #ffffff;
+    opacity:0;
+    visibility:hidden;
+    min-width:10%;
+    height:0;
+    position:absolute;
+    top:48px;
+    transform-origin:top;
+    transform: scaleY(0);
+    transition: transform 0.3s;
+}
+/*losango*/
+.items::before{
+    content:"";
+    position:absolute;
+    width:15px;
+    height:15px;
+    background: #f8c82b;
+    transform:rotate(45deg);
+    top:-7px;
+    left:20px;
+    z-index:-1;
+}
+/*torna item visivel*/
+.dropdown:hover > .items {
+    opacity: 1;
+    visibility: visible;
+    height: unset;
+    transform: scaley(1);
+}
+/*muda a cor de fundo espaço "home" */
+.dropdown:hover > .label {
+    background: #f3f1f1;
+}

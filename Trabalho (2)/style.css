@@ -1,0 +1,141 @@
+html,* {
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    outline: none;
+    font-family: "Poppins" ;
+} 
+/*BODY*/
+body {
+    margin: 0%;
+    padding: 0%;
+    background:  linear-gradient(90deg, #6554d4 67%, #ccf381 33%);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    min-width: 405px;
+    box-sizing: border-box;
+}
+
+/*BUTTON*/
+button {
+    cursor: pointer;
+    font-size: 18px;
+    max-width: 100px;
+    border-radius:4px;
+    background: #ccf381 ;
+    padding: 2px 8px 2px 8px;
+}
+
+/*LABEL*/
+label {
+    color: #474747;
+}
+/*INPUT */
+input {
+    background-color:rgb(255, 255, 255);
+    border-bottom:1px solid #bbbbbb; /*linhas do input */
+}
+/*CONTAINER 1 - COR DE FUNDO BRANCO*/
+.container-1 {
+    background-color:rgb(255, 255, 255);
+    margin: 10rem 10px 10rem 10px ;
+    max-width: 803px;
+	min-width: 300px;  
+    padding: 10px 0 10px 20px; /*descolamento: top 10px - right 0 - bottom 10px - left 20px*/
+
+}
+
+/*TEXTAREA 'DESCREVA O PEDIDO'*/
+textarea{
+    resize: none;
+    border: 1px solid #bbbbbb;
+}
+
+/*MENU DENTRO DE HEADER ~ COR:VERDE LIMÃO */
+.menu {
+    position:fixed;
+    width: 90%;
+    margin-bottom:100%;
+    font-size: 25px;
+    font-weight: 700;
+    min-width: 300px;
+}
+/*A DENTRO DA DIV MENU */
+a{
+    text-decoration: none; /*Remove o padrão de a */
+    color: #ccf381;
+    margin:0 0 0 3rem;/*descolamento: top 0 - right 0 - bottom 0 - left 3rem*/
+}
+
+/*RODAPÉ - COR:BRANCO */
+.footer {
+    background-color: rgba(255,255,255);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #474747;
+}
+
+/*HAMBUGUER MENU */
+#checkbox{
+    display: none;/*Remoção o 'display' do [checkbox]*/
+}
+.hamburguer {
+    margin:19px 0 0 0.5rem; /*descolamento: top 19px  right 0 - bottom 0 - left 0.5rem*/
+    position: fixed;
+    cursor: pointer;
+}
+
+/*--ANIMAÇÃO DO MENU TIPO HAMBUGUER--*
+ MUDANÇA DE POSIÇÃO,OPACIDADE E RODAÇÃO*/
+.line {
+    position:absolute;
+    width: 31px;
+    height: 4px;
+    background-color: #ccf381;
+    border-radius: 3px;
+    transition: transform .25s,opacity .35s;
+}
+.line-top {
+    transform: translateY(-7px);
+}
+.line-end {
+    transform: translateY(7px);
+}
+#checkbox:checked~.line-top {
+    transform: rotate(45deg);
+}
+#checkbox:checked~.line-middle {
+    transition: translateX(15px);
+    opacity: 0;
+}
+#checkbox:checked~.line-end {
+    transform: rotate(-45deg);
+}
+
+
+/*---MEDIA---*/
+@media (max-width: 500px){
+
+    .container-1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10rem 10px 10rem 10px ;
+        max-width: 803px;
+        padding: 10px 0 10px 20px;
+    }
+ 
+ body{
+        width: 90%;
+        margin: auto;
+        background: #6554d4; 
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
