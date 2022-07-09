@@ -15,7 +15,7 @@
 		</div>
 		<!--FORM-->
 		<div class="form">
-			<form action="#">
+			<form action="#" name="formulario" id="formulario" onsubmit="validar()" >
 				<div class="form-header">
 					<div class="title">
 						<h2>Cadastre-se</h2>
@@ -26,34 +26,34 @@
 					<!--NOME-->
 					<div class="input-box">
 						<label for="nome">Nome: </label>
-						<input id="nome"type="text" name="nome"
-						placeholder=" Seu nome" required>
+						<input class="nome" id="nome"type="text" name="nome"
+						placeholder=" Seu nome"  required>
 					</div>
 					<!--SOBRENOME-->
 					<div class="input-box">
 						<label for="Sobrenome">Sobrenome: </label>
 						<input id="sobrenome"type="text" name="sobrenome"
-						placeholder=" Seu sobrenome" required>
+						placeholder=" Seu sobrenome"  required>
 					</div>
 					
 					<!--E-MAIL-->
 					<div class="input-box">
 						<label for="email">E-mail: </label>
 						<input id="email"type="email" name="email"
-						placeholder=" Seu e-mail" required>
+						placeholder=" Seu e-mail"  required>
 					</div>
 					<!--CELULAR-->
 					<div class="input-box">
 						<label for="number">Celular: </label>
-						<input id="number"type="tel" name="number"
-						placeholder="(xx)xxxx-xxxx" required>
+						<input id="celular"type="cel" name="number"
+						placeholder="(xx)xxxx-xxxx"  required>
 					</div>
 				</div>
 
 				<!--AREA DE INTERESSE-->
 				<div class="input-box">
 					<label class="input-box"for="area">Áreas de interesse</label>
-					<select  id="area" multiple aria-label="multiple select example" required>
+					<select  id="area" multiple aria-label="multiple select example"  required>
 						<option selected disabled>Selecione</option> 
 						<option value="1">Análise</option>
 						<option value="2">Banco de dados</option>
@@ -70,27 +70,28 @@
 					<!--FEMININO-->
 					<div class="gender-group">
 						<div class="gender-input">
-							<input type="radio" name="gender" id="female">
+							<input type="radio" name="gender" checked class="nome" id="female">
 							<label for="female">Feminino</label>
 						</div>
 						<!--MASCULINO-->
 						<div class="gender-input">
-							<input type="radio" name="gender" id="male">
+							<input type="radio" name="gender"  class="sobrenome" id="male">
 							<label for="male">Masculino</label>
 						</div>
 						<!--OUTROS-->
 						<div class="gender-input">
-							<input type="radio" name="gender" id="outros">
+							<input type="radio" name="gender"  id="outros">
 							<label for="outros">Outros</label>
 						</div>
 					</div>
 				</div>
 				<!--BOTÃO-->
 				<div class="continue-button">
-					<button><a href="#">Continuar</a></button>
+                    <button type="submit" onclick="validar()"id="button">Enviar</button>
 				</div>
 			</form>
 		</div>
 	</div>
+	 <script src="assets/js/main.js"></script>
 </body>
 </html>
