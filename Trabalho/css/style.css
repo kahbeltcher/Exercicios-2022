@@ -18,6 +18,7 @@ body {
     min-height: 200px;
     margin-left: auto;
     margin-right: auto;
+    color: rgb(18, 21, 34);
 }
 #img{
  max-width: 100vw;
@@ -41,7 +42,7 @@ form {
     width: 100%;
     font-size: 20px;
     border-radius: 15px;
-    background: #4a81e9;;
+    background: #4a81e9;
     max-width: 6rem;
     text-align: center;
     
@@ -49,11 +50,12 @@ form {
 form input[type="reset"] {
     cursor: pointer;
     width: 100%;
+    font-size: 19px;
     border-radius: 15px;
-    background: #ee8080a6;
-    font-size: 20px;
-    max-width: 6rem;
+    width: 7rem;
     text-align: center;
+    background-color: #fafaf4;
+    border: 1px solid #b4b4b4;
 
 }
 main.container {
@@ -77,6 +79,8 @@ form input[type="email"],[name="date"],[type="text"] {
 select{
     border-radius: 0 .4rem .4rem .4rem;
     border: 1px solid rgb(206, 206, 206);
+    color: rgb(18, 21, 34);
+
 }
 
 input {
@@ -86,6 +90,7 @@ input {
     margin: 2px;
     padding: 2px 2px 2px 2px;
     height: 31.6px;
+    color: rgb(18, 21, 34);
 
 }
 
