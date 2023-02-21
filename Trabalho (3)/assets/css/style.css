@@ -32,7 +32,7 @@ body{
     width: 28rem;
 }
 .form {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@ body{
     color: #000000c0;
 }
 .continue-button button {
-    width: 100%;
+    width: 50%;
     margin-top: 2.5rem;
     border: none;
     background-color:  #1359a0;
@@ -119,6 +119,7 @@ body{
     padding: 0.62rem;
     cursor: pointer;
     color:rgb(255, 255, 255);
+    align-items: center;
     font-weight: 600;
 }
 .continue-button button:hover {
@@ -157,33 +158,12 @@ body{
 }
 
 }
-@media screen and (max-width:1065px) {
+@media screen and (max-width:995px) {
 
     .container {
         width:90%;
         height:auto;
 
     }
-    .input-box label {
-        padding: 0.50rem;
-    }
-    .input-box select {
-        width: 72%;
-        border: 2px solid #104d8a;
-    }
-    .input-group {
-        flex-direction: column;
-        overflow-y:scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right:5rem;
-    }
-    .gender-input {
-        margin-top: 2rem;
-        margin-top: 0.5rem;
-
-    }
-    .gender-group {
-        flex-direction: column;
-    }    
+   
 }
