@@ -10,50 +10,69 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	    <!------CONTAINER 1------>
 	<main class="container">
+		<img id="img"src="img/Customer Survey-rafiki.svg" alt="formulario-imagem">
 			<form   name="formulario" id="formulario" action="formulario.php" method="post" onsubmit="validar()">
-					<!--Nome-->
+					
+						<!------NOME------>
+
 					<div class="container-1">
 						<div class="nome">
 							<label for="nome"> Nome completo: </label></p>
 							<input type="text" class="formulario" id="nome" name="nome" size="25" placeholder="Digite o seu nome" minlength="15" maxlength="35" required>
 						</div>
 
-						<!--E-mail-->
+						<!------EMAIL------>
+
 						<div class="email">
 							<label for="txt_email"> E-mail: </label></p>
 							<input type="email" class="formulario"id="txt_email" minlength="10" placeholder="Digite o seu e-mail" size="25"required/>
 						</div>
-						<!--Telefone-->
+
+						<!------TELEFONE------>
+
 						<div class="telefone">
 						<label for="Telefone"> Telefone: </label></p>
 						<input type="text" id="Telefone"class="formulario" name="Telefone" value="" maxlength="35" minlength="15" placeholder="(xx)xxxx-xxxx" size="25">
 						</div>
-						<!--Nascimento-->
+
+						<!------NASCIMENTO------>
+
 						<div class="nascimento">
 							<label for="date" class="formulario">Data de nascimento: </label> </p>
 							<input type="date" class="formulario" id="date" name="date"  required>
 							<p id="idade" name="idade" class="idade"></p>
 						</div>
 				    </div>
+
+		<!-------CONTAINER 2 -------->
+
 					<div class="container-2">
-					<!--Sexo-->
+
+						<!------SEXO------>
+
 						<div class="sexo">
 						<p> Sexo:</p>
-							<label for="feminino"> <input type="radio" name="sexo" id="feminino" value=""checked="checked">Feminino</label>
-							<label for="masculino"><input type="radio" name="sexo" id="masculino" value="" > Masculino </label>
+							<label for="feminino" id="label_form">
+								<input type="radio" name="sexo" id="feminino" value=""checked="checked">Feminino</label>
+							<label for="masculino" id="label_form">
+								<input type="radio" name="sexo" id="masculino" value="" > Masculino </label>
 						</div>
-						<!--Estado Civil-->
+
+						<!------ESTADO CIVIL------>
+
 						<div class="civil">
 						<p>Estado civil:</p>
 					
-							<input type="radio" name="status" id="solteiro" value="" checked="checked"><label for="solteiro"> solteiro </label>
-							<input type="radio" name="status" id="casado" value="" ><label for="casado"> Casado</label>
-							<input type="radio" name="status" id="outros" value="" ><label for="outros"> Outros </label>
+							<input type="radio" name="status" id="solteiro" value="" checked="checked"><label id="label_form" for="solteiro"> solteiro </label>
+							<input type="radio" name="status" id="casado" value="" ><label id="label_form" for="casado"> Casado</label>
+							<input type="radio" name="status" id="outros" value="" ><label id="label_form" for="outros"> Outros </label>
 						</div>
 				    </div>
-					<!--Areas-->
+
+					<!-------AREA------->
+
 					<div class="areas">
 					<p>Áreas de interesse:</p>
 						<select name="area" id="area">
@@ -63,9 +82,11 @@
 							<option nome="areas" id="engenharia" value="engenharia">Engenharia/redes</option>
 						</select>
 					</div>
-				<!--Enviar/limpar-->
+
+				<!------ENVIAR-LIMPAR ----->
+
 				<div class="input">
-				<input type="button"  value="enviar" onclick="validar()">
+				<input type="send"  value="enviar" onclick="validar()">
 				<input type="reset"  value="limpar">
 				</div>
 			</form>    
